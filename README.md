@@ -59,3 +59,47 @@ router.get('/', function(req, res) {
 
 1. run the webservice with "npm start"
 1. open the url: http://127.0.0.1:3000/ in your webbrowser and recieve "hello rest" in the browser
+
+## branch node_rest_get_book_example
+
+Contains a small example Rest service which implements a post and a get methode (without function).
+###### run it
+1. download the files from the branch (or clone branch)
+1. place all files within a parent Folder (i.e. basic_node_project)
+1. open Terminal in the parent folder
+1. run npm install in this folder
+1. the default command "node app.js" shoud start the webservice
+1. the in package.json defined costum cmd "npm start" shoud start the webservice
+1. call the url: "http://127.0.0.1:3000/book" and recieve the book title "harry potter"
+1. call the url: "http://127.0.0.1:3000/book/add?book=lord of the rings" and recieve the answer "your book is "yourbook""
+
+###### set it up initially
+1. repeat all steps in branch node_basis_project
+1. run cmd "npm install express" to install the package which allows you to use http requests
+1. edit app.js to contain: 
+
+```js
+const express = require('express');
+
+const app = express();
+const router = express.Router();
+
+app.use(router);
+
+app.listen(3000, function() {
+    console.log('Webservice started at: 127.0.0.1:3000');
+});
+
+router.get('/book', function(req, res) {
+    res.send('harry potter');
+});
+
+router.get('/book/add', (req, res) => {
+    const enteredBook = req.query.book;
+    res.send(`${enteredBook} was added to the library`);
+});
+```
+
+1. call the url: "http://127.0.0.1:3000/book" and recieve the book title "harry potter"
+1. call the url: "http://127.0.0.1:3000/book/add?book=lord of the rings" and recieve the answer "your book is "yourbook""
+

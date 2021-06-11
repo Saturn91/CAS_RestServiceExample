@@ -9,6 +9,11 @@ app.listen(3000, function() {
     console.log('Webservice started at: 127.0.0.1:3000');
 });
 
-router.get('/', function(req, res) {
-    res.send('hello rest');
+router.get('/book', function(req, res) {
+    res.send('harry potter');
+});
+
+router.get('/book/add', (req, res) => {
+    const enteredBook = req.query.book;
+    res.send(`${enteredBook} was added to the library`);
 });
