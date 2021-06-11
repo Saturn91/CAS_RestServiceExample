@@ -8,8 +8,5 @@
     "start": "node app.js"
   },
   "author": "Saturn91",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "license": "ISC"
 }
