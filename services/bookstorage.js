@@ -24,6 +24,8 @@ class BookStore {
                     output += title + '<br>';
                 });
                 res.send(output);
+            } else {
+                res.send('no books stored yet, call books/add?book=XXX to add a book')
             }
         });
     }
