@@ -71,7 +71,7 @@ Contains a small example Rest service which implements a post and a get methode 
 1. the default command "node app.js" shoud start the webservice
 1. the in package.json defined costum cmd "npm start" shoud start the webservice
 1. call the url: "http://127.0.0.1:3000/book" and recieve the book title "harry potter"
-1. call the url: "http://127.0.0.1:3000/book/add?book=lord of the rings" and recieve the answer "your book is "yourbook""
+1. call the url: "http://127.0.0.1:3000/book/add?book=lord of the rings" and recieve the answer "lord of the rings was added to the library""
 
 ###### set it up initially
 1. repeat all steps in branch node_basis_project
