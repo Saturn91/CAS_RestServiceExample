@@ -31,8 +31,8 @@ Contains a small example Rest service programmed with node.
 1. place all files within a parent Folder (i.e. basic_node_project)
 1. open Terminal in the parent folder
 1. run npm install in this folder
-1. the default command "node app.js" shout print "hello node"
-1. the in package.json defined costum cmd "npm start" should print "hello node" 
+1. the default command "node app.js" shoud start the webservice
+1. the in package.json defined costum cmd "npm start" shoud start the webservice
 
 ###### set it up initially
 1. repeat all steps in branch node_basis_project
