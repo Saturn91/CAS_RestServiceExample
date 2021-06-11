@@ -188,6 +188,6 @@ class BookStore {
 
 export const bookStore = new BookStore();
 ```
-
+1. the in package.json defined costum cmd "npm start" shoud start the webservice
 1. call the url: "http://127.0.0.1:3000/book" and recieve the book title "harry potter"
 1. call the url: "http://127.0.0.1:3000/book/add?book=lord of the rings" and recieve the answer "your book is "yourbook""
