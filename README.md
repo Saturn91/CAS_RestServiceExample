@@ -113,8 +113,8 @@ Contains a small restservice which is able to store and display books using the 
 1. run npm install in this folder
 1. the default command "node app.js" shoud start the webservice
 1. the in package.json defined costum cmd "npm start" shoud start the webservice
-1. call the url: "http://127.0.0.1:3000/books" and recieve the list of all books already defined or "no books defined"
-1. call the url: "http://127.0.0.1:3000/books/add?book=lord of the ring" the book lord of the rings get added and the updated list shows up
+1. call the url: [http://127.0.0.1:3000/books](http://127.0.0.1:3000/books) and recieve the list of all books already defined or "no books defined"
+1. call the url: [http://127.0.0.1:3000/books/add?book=lord of the ring](http://127.0.0.1:3000/books/add?book=lord of the ring) the book lord of the rings get added and the updated list shows up
 
 ###### set it up initially
 1. repeat all steps in branch node_basis_project
@@ -189,5 +189,5 @@ class BookStore {
 export const bookStore = new BookStore();
 ```
 1. the in package.json defined costum cmd "npm start" shoud start the webservice
-1. call the url: "http://127.0.0.1:3000/book" and recieve the book title "harry potter"
-1. call the url: "http://127.0.0.1:3000/book/add?book=lord of the rings" and recieve the updated list as answer"
+1. call the url: [http://127.0.0.1:3000/books](http://127.0.0.1:3000/books) and recieve the list of all books already defined or "no books defined"
+1. call the url: [http://127.0.0.1:3000/books/add?book=lord of the ring](http://127.0.0.1:3000/books/add?book=lord of the ring) the book lord of the rings get added and the updated list shows up
