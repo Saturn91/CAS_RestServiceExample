@@ -40,23 +40,25 @@ Contains a small example Rest service programmed with node asnwering "hello rest
 1. run cmd "npm install express" to install the package which allows you to use http requests
 1. edit app.js to contain: 
 
-> const express = require('express');
-> const bodyParser = require('body-parser');
->
-> const app = express();
-> const router = express.Router();
->
-> app.use(express.static(__dirname+ '/public'));
-> app.use(bodyParser.urlencoded({ extended: false}));
-> app.use(router);
->
-> app.listen(3000, function() {
->    console.log('Webservice started at: 127.0.0.1:3000');
-> });
->
-> router.get('/', function(req, res) {
->    res.send('hello rest');
-> });
+```js
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+const router = express.Router();
+
+app.use(express.static(__dirname+ '/public'));
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(router);
+
+app.listen(3000, function() {
+    console.log('Webservice started at: 127.0.0.1:3000');
+});
+
+router.get('/', function(req, res) {
+    res.send('hello rest');
+});
+```
 
 1. run the webservice with "npm start"
 1. open the url: http://127.0.0.1:3000/ in your webbrowser and recieve "hello rest" in the browser
